@@ -1,6 +1,6 @@
-# gulp-markdown [![Build Status](https://travis-ci.org/sindresorhus/gulp-markdown.svg?branch=master)](https://travis-ci.org/sindresorhus/gulp-markdown)
+# gulp-markdown2html [![Build Status](https://travis-ci.org/sindresorhus/gulp-markdown.svg?branch=master)](https://travis-ci.org/sindresorhus/gulp-markdown)
 
-> Markdown to HTML with [marked](https://github.com/chjj/marked)
+> markdown to html bootstrap page converter
 
 *Issues with the output should be reported on the marked [issue tracker](https://github.com/chjj/marked/issues).*
 
@@ -8,7 +8,7 @@
 ## Install
 
 ```
-$ npm install --save-dev gulp-markdown
+$ npm install --save-dev gulp-markdown2html
 ```
 
 
@@ -16,11 +16,11 @@ $ npm install --save-dev gulp-markdown
 
 ```js
 var gulp = require('gulp');
-var markdown = require('gulp-markdown');
+var markdown2html = require('gulp-markdown2html');
 
 gulp.task('default', function () {
 	return gulp.src('intro.md')
-		.pipe(markdown())
+		.pipe(markdown2html())
 		.pipe(gulp.dest('dist'));
 });
 ```
@@ -28,9 +28,25 @@ gulp.task('default', function () {
 
 ## API
 
-### markdown(options)
+### markdown2html(options)
 
 See the marked [options](https://github.com/chjj/marked#options-1).
+
+#### thema
+
+Specify the bootswatch thema. see other [themas](https://bootswatch.com/)
+
+**Type**: `String`
+
+**Default**: pure bootstrap
+
+#### highlightThema
+
+Specify the highlightjs thema. see other [themas](https://highlightjs.org/static/demo/)
+
+**Type**: `String`
+
+**Default**: `github`
 
 ### markdown.marked
 
@@ -39,4 +55,4 @@ Access the `marked` object to customize the [lexer](https://github.com/chjj/mark
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [mitsuruog](https://github.com/mitsuruog)

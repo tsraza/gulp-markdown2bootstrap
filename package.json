@@ -1,16 +1,12 @@
 {
-  "name": "gulp-markdown",
-  "version": "1.2.0",
-  "description": "Markdown to HTML",
+  "name": "gulp-markdown2bootstrap",
+  "version": "0.0.1",
+  "description": "markdown to html bootstrap page converter",
   "license": "MIT",
-  "repository": "sindresorhus/gulp-markdown",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
-  },
+  "repository": "mitsuruog/gulp-markdown2bootstrap",
+  "author": "mitsuruog",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.2"
   },
   "scripts": {
     "test": "mocha"
@@ -26,11 +22,15 @@
     "compile",
     "convert",
     "markup",
-    "html"
+    "html",
+    "bootstrap",
+    "twb"
   ],
   "dependencies": {
     "gulp-util": "^3.0.0",
+    "jade": "^1.11.0",
     "marked": "^0.3.2",
+    "merge": "^1.2.0",
     "through2": "^2.0.0"
   },
   "devDependencies": {

@@ -14,8 +14,7 @@ it('should compile Markdown to HTML', function (cb) {
 	stream.on('end', cb);
 
 	stream.write(new gutil.File({
-		path: 'fixture.md',
-		contents: new Buffer('*foo*')
+		path: './test/fixture.md',
 	}));
 
 	stream.end();

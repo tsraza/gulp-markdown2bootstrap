@@ -1,0 +1,41 @@
+doctype
+html( lang="en" )
+    head
+        title #{pkg.name}
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+        meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+        meta( name='description', content='Baking Bootstrap Snippets with Jade' )
+        //- Bootswatch Theme
+        if thema
+          link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/#{thema}/bootstrap.min.css", rel="stylesheet")
+        else
+          link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet")
+        link(herf="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/#{highlightThema}.min.css" rel="stylesheet")
+        style.
+          .anchor {
+            display: block;
+            position: relative;
+            top: -6rem;
+            visibility: hidden;
+          }
+    body(style="padding-top:10rem;")
+        nav.navbar.navbar-inverse.navbar-fixed-top( role="navigation" )
+            .container-fluid
+                 .navbar-header
+                     a.navbar-brand(href="#") #{pkg.name}
+                     p.navbar-text #{pkg.description}
+        .container
+            .row
+                  .col-sm-3
+                      .panel.panel-default
+                          .panel-heading Table contents
+                          if toc.length
+                              .list-group
+                                  each item in toc
+                                      a.list-group-item(href="##{item.anchor}") #{item.text}
+                  .col-sm-8 !{content}
+
+        script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+        script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
+        script( src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js' )

@@ -1,4 +1,4 @@
-# gulp-markdown2html [![Build Status](https://travis-ci.org/sindresorhus/gulp-markdown.svg?branch=master)](https://travis-ci.org/sindresorhus/gulp-markdown)
+# gulp-markdown2html [![Build Status](https://travis-ci.org/mitsuruog/gulp-markdown2html.svg?branch=master)](https://travis-ci.org/mitsuruog/gulp-markdown2html)
 
 > markdown to html bootstrap page converter
 

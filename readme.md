@@ -32,17 +32,17 @@ gulp.task('default', function () {
 
 See the marked [options](https://github.com/chjj/marked#options-1).
 
-#### thema
+#### theme
 
-Specify the bootswatch thema. see other [themas](https://bootswatch.com/)
+Specify the bootswatch theme. see other [themes](https://bootswatch.com/)
 
 **Type**: `String`
 
 **Default**: pure bootstrap
 
-#### highlightThema
+#### highlightTheme
 
-Specify the highlightjs thema. see other [themas](https://highlightjs.org/static/demo/)
+Specify the highlightjs theme. see other [themes](https://highlightjs.org/static/demo/)
 
 **Type**: `String`
 

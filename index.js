@@ -77,7 +77,7 @@ renderer.table = (header, body) => {
 module.exports = function(options) {
 
 	options = options || {};
-	options.highlightThema = options.highlightThema || 'github';
+	options.highlightTheme = options.highlightTheme || 'github';
 	options.highlight = options.highlight || function(code) {
 		return require('highlight.js').highlightAuto(code).value;
 	};

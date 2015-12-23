@@ -27,11 +27,13 @@ renderer.blockquote = (quote) => {
 renderer.heading = (text, level, raw) => {
 	var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
 
-	toc.push({
-		anchor: escapedText,
-    level: level,
-    text: text
-	});
+	if(level == 1) {
+		toc.push({
+			anchor: escapedText,
+			level: level,
+			text: text
+		});
+	}
 
 	return '<a class="anchor" id="' + escapedText + '"></a>\n' +
 		'<h' + level + '><a name="' +
@@ -111,6 +113,8 @@ module.exports = function(options) {
 
 			file.contents = new Buffer(jade.renderFile(__dirname + '/template/layout.jade', merge(options, locals)));
 			file.path = gutil.replaceExtension(file.path, '.html');
+
+			toc = [];
 
 			cb(null, file);
 		});

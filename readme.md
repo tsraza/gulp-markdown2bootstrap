@@ -1,16 +1,16 @@
-# gulp-markdown2html [![Build Status](https://travis-ci.org/mitsuruog/gulp-markdown2html.svg?branch=master)](https://travis-ci.org/mitsuruog/gulp-markdown2html)
+# gulp-markdown2html
+
+[![Build Status](https://travis-ci.org/mitsuruog/gulp-markdown2html.svg?branch=master)](https://travis-ci.org/mitsuruog/gulp-markdown2html)
 
 > markdown to html bootstrap page converter
 
 *Issues with the output should be reported on the marked [issue tracker](https://github.com/chjj/marked/issues).*
-
 
 ## Install
 
 ```
 $ npm install --save-dev gulp-markdown2html
 ```
-
 
 ## Usage
 

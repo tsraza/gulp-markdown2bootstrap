@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"><head><title>gulp-markdown2bootstrap</title><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Baking Bootstrap Snippets with Jade"><link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/github.min.css" rel="stylesheet"><style>.anchor {
+  display: block;
+  position: relative;
+  top: -6rem;
+  visibility: hidden;
+}</style></head><body style="padding-top:10rem;"><nav role="navigation" class="navbar navbar-inverse navbar-fixed-top"><div class="container-fluid"><div class="navbar-header"><a href="#" class="navbar-brand">gulp-markdown2bootstrap</a><p class="navbar-text">markdown to html bootstrap page converter</p></div></div></nav><div class="container"><div class="row"><div class="col-sm-3"><div class="panel panel-default"><div class="panel-heading">Table contents</div><div class="list-group"><a href="#gulp-markdown2html-a-href-https-travis-ci-org-mitsuruog-gulp-markdown2html-img-src-https-travis-ci-org-mitsuruog-gulp-markdown2html-svg-branch-master-alt-build-status-a-" class="list-group-item">gulp-markdown2html &lt;a href=&quot;https://travis-ci.org/mitsuruog/gulp-markdown2html&quot;&gt;&lt;img src=&quot;https://travis-ci.org/mitsuruog/gulp-markdown2html.svg?branch=master&quot; alt=&quot;Build Status&quot;&gt;&lt;/a&gt;</a></div></div></div><div class="col-sm-8"><a class="anchor" id="gulp-markdown2html-a-href-https-travis-ci-org-mitsuruog-gulp-markdown2html-img-src-https-travis-ci-org-mitsuruog-gulp-markdown2html-svg-branch-master-alt-build-status-a-"></a>
+<h1><a name="gulp-markdown2html-a-href-https-travis-ci-org-mitsuruog-gulp-markdown2html-img-src-https-travis-ci-org-mitsuruog-gulp-markdown2html-svg-branch-master-alt-build-status-a-" class="text-muted" href="#gulp-markdown2html-a-href-https-travis-ci-org-mitsuruog-gulp-markdown2html-img-src-https-travis-ci-org-mitsuruog-gulp-markdown2html-svg-branch-master-alt-build-status-a-"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>gulp-markdown2html <a href="https://travis-ci.org/mitsuruog/gulp-markdown2html"><img src="https://travis-ci.org/mitsuruog/gulp-markdown2html.svg?branch=master" alt="Build Status"></a></h1><blockquote>
+<p><p>markdown to html bootstrap page converter</p>
+</p>
+</blockquote>
+<p><em>Issues with the output should be reported on the marked <a href="https://github.com/chjj/marked/issues">issue tracker</a>.</em></p>
+<a class="anchor" id="install"></a>
+<h2><a name="install" class="text-muted" href="#install"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Install</h2><pre><code>$ npm install --<span class="hljs-built_in">save</span>-<span class="hljs-built_in">dev</span> gulp-markdown2html
+</code></pre><a class="anchor" id="usage"></a>
+<h2><a name="usage" class="text-muted" href="#usage"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Usage</h2><pre><code class="lang-js"><span class="hljs-keyword">var</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp'</span>);
+<span class="hljs-keyword">var</span> markdown2html = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-markdown2html'</span>);
+
+gulp.task(<span class="hljs-string">'default'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> gulp.src(<span class="hljs-string">'intro.md'</span>)
+        .pipe(markdown2html())
+        .pipe(gulp.dest(<span class="hljs-string">'dist'</span>));
+});
+</code></pre>
+<a class="anchor" id="api"></a>
+<h2><a name="api" class="text-muted" href="#api"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>API</h2><a class="anchor" id="markdown2html-options-"></a>
+<h3><a name="markdown2html-options-" class="text-muted" href="#markdown2html-options-"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>markdown2html(options)</h3><p>See the marked <a href="https://github.com/chjj/marked#options-1">options</a>.</p>
+<a class="anchor" id="theme"></a>
+<h4><a name="theme" class="text-muted" href="#theme"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>theme</h4><p>Specify the bootswatch theme. see other <a href="https://bootswatch.com/">themes</a></p>
+<p><strong>Type</strong>: <code>String</code></p>
+<p><strong>Default</strong>: pure bootstrap</p>
+<a class="anchor" id="highlighttheme"></a>
+<h4><a name="highlighttheme" class="text-muted" href="#highlighttheme"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>highlightTheme</h4><p>Specify the highlightjs theme. see other <a href="https://highlightjs.org/static/demo/">themes</a></p>
+<p><strong>Type</strong>: <code>String</code></p>
+<p><strong>Default</strong>: <code>github</code></p>
+<a class="anchor" id="markdown-marked"></a>
+<h3><a name="markdown-marked" class="text-muted" href="#markdown-marked"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>markdown.marked</h3><p>Access the <code>marked</code> object to customize the <a href="https://github.com/chjj/marked#access-to-lexer-and-parser">lexer</a>, <a href="https://github.com/chjj/marked#access-to-lexer-and-parser">parser</a> or <a href="https://github.com/chjj/marked#renderer">renderer</a>.</p>
+<a class="anchor" id="license"></a>
+<h2><a name="license" class="text-muted" href="#license"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>License</h2><p>MIT © <a href="https://github.com/mitsuruog">mitsuruog</a></p>
+</div></div></div><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script></body></html>

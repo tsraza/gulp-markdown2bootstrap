@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="en"><head><title>gulp-markdown2bootstrap</title><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Baking Bootstrap Snippets with Jade"><link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/superhero/bootstrap.min.css" rel="stylesheet"><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/github.min.css" rel="stylesheet"><style>.anchor {
+  display: block;
+  position: relative;
+  top: -6rem;
+  visibility: hidden;
+}</style></head><body style="padding-top:10rem;"><nav role="navigation" class="navbar navbar-inverse navbar-fixed-top"><div class="container-fluid"><div class="navbar-header"><a href="#" class="navbar-brand">gulp-markdown2bootstrap</a><p class="navbar-text">markdown to html bootstrap page converter</p></div></div></nav><div class="container"><div class="row"><div class="col-sm-3"><div class="panel panel-default"><div class="panel-heading">Table contents</div><div class="list-group"><a href="#h1" class="list-group-item">H1</a><a href="#alt-h1" class="list-group-item">Alt-H1</a><a href="#emphasis" class="list-group-item">Emphasis</a><a href="#lists" class="list-group-item">Lists</a><a href="#links" class="list-group-item">Links</a><a href="#images" class="list-group-item">Images</a><a href="#code-and-syntax-highlighting" class="list-group-item">Code and Syntax Highlighting</a><a href="#tables" class="list-group-item">Tables</a><a href="#blockquotes" class="list-group-item">Blockquotes</a><a href="#inline-html" class="list-group-item">Inline HTML</a><a href="#horizontal-rule" class="list-group-item">Horizontal Rule</a><a href="#line-breaks" class="list-group-item">Line Breaks</a><a href="#youtube-videos" class="list-group-item">Youtube videos</a></div></div></div><div class="col-sm-8"><a class="anchor" id="h1"></a>
+<h1><a name="h1" class="text-muted" href="#h1"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>H1</h1><a class="anchor" id="h2"></a>
+<h2><a name="h2" class="text-muted" href="#h2"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>H2</h2><a class="anchor" id="h3"></a>
+<h3><a name="h3" class="text-muted" href="#h3"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>H3</h3><a class="anchor" id="h4"></a>
+<h4><a name="h4" class="text-muted" href="#h4"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>H4</h4><a class="anchor" id="h5"></a>
+<h5><a name="h5" class="text-muted" href="#h5"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>H5</h5><a class="anchor" id="h6"></a>
+<h6><a name="h6" class="text-muted" href="#h6"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>H6</h6><p>Alternatively, for H1 and H2, an underline-ish style:</p>
+<a class="anchor" id="alt-h1"></a>
+<h1><a name="alt-h1" class="text-muted" href="#alt-h1"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Alt-H1</h1><a class="anchor" id="alt-h2"></a>
+<h2><a name="alt-h2" class="text-muted" href="#alt-h2"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Alt-H2</h2><a class="anchor" id="emphasis"></a>
+<h1><a name="emphasis" class="text-muted" href="#emphasis"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Emphasis</h1><p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+<p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
+<a class="anchor" id="lists"></a>
+<h1><a name="lists" class="text-muted" href="#lists"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Lists</h1><ol>
+<li>First ordered list item</li>
+<li>Another item<ul>
+<li>Unordered sub-list.</li>
+</ul>
+</li>
+<li>Actual numbers don&#39;t matter, just that it&#39;s a number<ol>
+<li>Ordered sub-list</li>
+</ol>
+</li>
+<li>And another item.</li>
+</ol>
+<p>⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we&#39;ll use three here to also align the raw Markdown).</p>
+<p>⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
+⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
+⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</p>
+<ul>
+<li>Unordered list can use asterisks</li>
+<li>Or minuses</li>
+<li>Or pluses</li>
+</ul>
+<a class="anchor" id="links"></a>
+<h1><a name="links" class="text-muted" href="#links"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Links</h1><p><a href="https://www.google.com">I&#39;m an inline-style link</a></p>
+<p><a href="https://www.google.com" title="Google&#39;s Homepage">I&#39;m an inline-style link with title</a></p>
+<p><a href="https://www.mozilla.org">I&#39;m a reference-style link</a></p>
+<p><a href="../blob/master/LICENSE">I&#39;m a relative reference to a repository file</a></p>
+<p><a href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
+<p>Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a>.</p>
+<p>URLs and URLs in angle brackets will automatically get turned into links.
+<a href="http://www.example.com">http://www.example.com</a> or <a href="http://www.example.com">http://www.example.com</a> and sometimes
+example.com (but not on Github, for example).</p>
+<p>Some text to show that the reference links can follow later.</p>
+<a class="anchor" id="images"></a>
+<h1><a name="images" class="text-muted" href="#images"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Images</h1><p>Here&#39;s our logo (hover to see the title text):</p>
+<p>Inline-style:
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1"></p>
+<p>Reference-style:
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2"></p>
+<a class="anchor" id="code-and-syntax-highlighting"></a>
+<h1><a name="code-and-syntax-highlighting" class="text-muted" href="#code-and-syntax-highlighting"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Code and Syntax Highlighting</h1><p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+<pre><code class="lang-javascript">var <span class="hljs-keyword">s</span> = <span class="hljs-string">"JavaScript syntax highlighting"</span>;
+alert(<span class="hljs-keyword">s</span>);
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-keyword">s</span> = <span class="hljs-string">"Python syntax highlighting"</span>
+<span class="hljs-keyword">print</span> <span class="hljs-keyword">s</span>
+</code></pre>
+<pre><code><span class="hljs-keyword">No</span> language indicated, <span class="hljs-keyword">so</span> <span class="hljs-keyword">no</span> <span class="hljs-keyword">syntax</span> highlighting.
+But let's throw <span class="hljs-keyword">in</span> a &lt;b&gt;tag&lt;/b&gt;.
+</code></pre><a class="anchor" id="tables"></a>
+<h1><a name="tables" class="text-muted" href="#tables"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Tables</h1><p>Colons can be used to align columns.</p>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<p>There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don&#39;t need to make the
+raw Markdown line up prettily. You can also use inline Markdown.</p>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Less</th>
+<th>Pretty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Still</em></td>
+<td><code>renders</code></td>
+<td><strong>nicely</strong></td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<a class="anchor" id="blockquotes"></a>
+<h1><a name="blockquotes" class="text-muted" href="#blockquotes"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Blockquotes</h1><blockquote>
+<p><p>Blockquotes are very handy in email to emulate reply text.
+This line is part of the same quote.</p>
+</p>
+</blockquote>
+<p>Quote break.</p>
+<blockquote>
+<p><p>This is a very long line that will still be quoted properly when it wraps. Oh boy let&#39;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
+</p>
+</blockquote>
+<a class="anchor" id="inline-html"></a>
+<h1><a name="inline-html" class="text-muted" href="#inline-html"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Inline HTML</h1><dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does <em>not</em> work <strong>very</strong> well. Use HTML <em>tags</em>.</dd>
+</dl>
+
+<a class="anchor" id="horizontal-rule"></a>
+<h1><a name="horizontal-rule" class="text-muted" href="#horizontal-rule"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Horizontal Rule</h1><p>Three or more...</p>
+<hr>
+<p>Hyphens</p>
+<hr>
+<p>Asterisks</p>
+<hr>
+<p>Underscores</p>
+<a class="anchor" id="line-breaks"></a>
+<h1><a name="line-breaks" class="text-muted" href="#line-breaks"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Line Breaks</h1><p>Here&#39;s a line for us to start with.</p>
+<p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
+<p>This line is also a separate paragraph, but...
+This line is only separated by a single newline, so it&#39;s a separate line in the <em>same paragraph</em>.</p>
+<a class="anchor" id="youtube-videos"></a>
+<h1><a name="youtube-videos" class="text-muted" href="#youtube-videos"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Youtube videos</h1><p><a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg"
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
+<p>Or, in pure Markdown, but losing the image sizing and border:</p>
+<p><a href="http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE"></a></p>
+</div></div></div><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script></body></html>

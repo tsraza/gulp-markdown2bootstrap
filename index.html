@@ -6,22 +6,22 @@
   position: relative;
   top: -6rem;
   visibility: hidden;
-}</style></head><body><nav role="navigation" class="navbar navbar-inverse navbar-fixed-top"><div class="container-fluid"><div class="navbar-header"><a href="./" class="navbar-brand">gulp-markdown2bootstrap</a><p class="navbar-text">markdown to html bootstrap page converter</p></div></div></nav><div class="container"><div class="row"><div class="col-sm-3"><div class="panel panel-default"><div class="panel-heading">Table contents</div><div class="list-group"><a href="#gulp-markdown2html" class="list-group-item">gulp-markdown2html</a></div></div></div><div class="col-sm-8"><a class="anchor" id="gulp-markdown2html"></a>
-<h1><a name="gulp-markdown2html" class="text-muted" href="#gulp-markdown2html"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>gulp-markdown2html</h1><p><a href="https://travis-ci.org/mitsuruog/gulp-markdown2html"><img src="https://travis-ci.org/mitsuruog/gulp-markdown2html.svg?branch=master" alt="Build Status"></a></p>
+}</style></head><body><nav role="navigation" class="navbar navbar-inverse navbar-fixed-top"><div class="container-fluid"><div class="navbar-header"><a href="./" class="navbar-brand">gulp-markdown2bootstrap</a><p class="navbar-text">markdown to html bootstrap page converter</p></div></div></nav><div class="container"><div class="row"><div class="col-sm-3"><div class="panel panel-default"><div class="panel-heading">Table contents</div><div class="list-group"><a href="#markdown2bootstrap" class="list-group-item">markdown2bootstrap</a></div></div></div><div class="col-sm-8"><a class="anchor" id="markdown2bootstrap"></a>
+<h1><a name="markdown2bootstrap" class="text-muted" href="#markdown2bootstrap"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>markdown2bootstrap</h1><p><a href="https://travis-ci.org/mitsuruog/markdown2bootstrap"><img src="https://travis-ci.org/mitsuruog/markdown2bootstrap.svg?branch=master" alt="Build Status"></a></p>
 <blockquote>
 <p><p>markdown to html bootstrap page converter</p>
 </p>
 </blockquote>
 <p><em>Issues with the output should be reported on the marked <a href="https://github.com/chjj/marked/issues">issue tracker</a>.</em></p>
 <a class="anchor" id="install"></a>
-<h2><a name="install" class="text-muted" href="#install"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Install</h2><pre><code>$ npm install --<span class="hljs-built_in">save</span>-<span class="hljs-built_in">dev</span> gulp-markdown2html
+<h2><a name="install" class="text-muted" href="#install"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Install</h2><pre><code>$ npm install --<span class="hljs-built_in">save</span>-<span class="hljs-built_in">dev</span> markdown2bootstrap
 </code></pre><a class="anchor" id="usage"></a>
 <h2><a name="usage" class="text-muted" href="#usage"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>Usage</h2><pre><code class="lang-js"><span class="hljs-keyword">var</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp'</span>);
-<span class="hljs-keyword">var</span> markdown2html = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-markdown2html'</span>);
+<span class="hljs-keyword">var</span> markdown2bootstrap = <span class="hljs-built_in">require</span>(<span class="hljs-string">'markdown2bootstrap'</span>);
 
 gulp.task(<span class="hljs-string">'default'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">return</span> gulp.src(<span class="hljs-string">'intro.md'</span>)
-        .pipe(markdown2html({
+        .pipe(markdown2bootstrap({
             theme: <span class="hljs-string">'cerulean'</span>
         }))
         .pipe(gulp.dest(<span class="hljs-string">'dist'</span>));

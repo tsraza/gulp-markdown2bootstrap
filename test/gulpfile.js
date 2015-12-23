@@ -3,8 +3,8 @@ const gulp = require('gulp');
 gulp.task('default', () => {
 	gulp.src('fixture.md')
 		.pipe(require('../index.js')({
-      theme: 'sandstone'
-      //highlightjsThema: 'zenburn'
+      theme: 'sandstone',
+      highlightTheme: 'zenburn',
     }))
 		.pipe(gulp.dest('./'));
 });

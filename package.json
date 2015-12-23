@@ -1,6 +1,6 @@
 {
   "name": "gulp-markdown2bootstrap",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "markdown to html bootstrap page converter",
   "license": "MIT",
   "repository": "mitsuruog/gulp-markdown2bootstrap",

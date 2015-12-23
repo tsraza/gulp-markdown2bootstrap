@@ -1,6 +1,6 @@
-# gulp-markdown2html
+# gulp-markdown2bootstrap
 
-[![Build Status](https://travis-ci.org/mitsuruog/gulp-markdown2html.svg?branch=master)](https://travis-ci.org/mitsuruog/gulp-markdown2html)
+[![Build Status](https://travis-ci.org/mitsuruog/gulp-markdown2bootstrap.svg?branch=master)](https://travis-ci.org/mitsuruog/gulp-markdown2bootstrap)
 
 > markdown to html bootstrap page converter
 
@@ -9,18 +9,18 @@
 ## Install
 
 ```
-$ npm install --save-dev gulp-markdown2html
+$ npm install --save-dev gulp-markdown2bootstrap
 ```
 
 ## Usage
 
 ```js
 var gulp = require('gulp');
-var markdown2html = require('gulp-markdown2html');
+var markdown2bootstrap = require('gulp-markdown2bootstrap');
 
 gulp.task('default', function () {
 	return gulp.src('intro.md')
-		.pipe(markdown2html({
+		.pipe(markdown2bootstrap({
 			theme: 'cerulean'
 		}))
 		.pipe(gulp.dest('dist'));

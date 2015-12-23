@@ -20,11 +20,46 @@ var markdown2html = require('gulp-markdown2html');
 
 gulp.task('default', function () {
 	return gulp.src('intro.md')
-		.pipe(markdown2html())
+		.pipe(markdown2html({
+			theme: 'cerulean'
+		}))
 		.pipe(gulp.dest('dist'));
 });
 ```
 
+## DEMO
+
+[![cerulean](./thumbnails/cerulean.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/cerulean.html)
+
+[![cosmo](./thumbnails/cosmo.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/cosmo.html)
+
+[![cyborg](./thumbnails/cyborg.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/cyborg.html)
+
+[![darkly](./thumbnails/darkly.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/darkly.html)
+
+[![flatly](./thumbnails/flatly.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/flatly.html)
+
+[![journal](./thumbnails/journal.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/journal.html)
+
+[![lumen](./thumbnails/lumen.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/lumen.html)
+
+[![paper](./thumbnails/paper.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/paper.html)
+
+[![readable](./thumbnails/readable.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/readable.html)
+
+[![sandstone](./thumbnails/sandstone.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/sandstone.html)
+
+[![simplex](./thumbnails/simplex.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/simplex.html)
+
+[![slate](./thumbnails/slate.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/slate.html)
+
+[![spacelab](./thumbnails/spacelab.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/spacelab.html)
+
+[![superhero](./thumbnails/superhero.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/superhero.html)
+
+[![united](./thumbnails/united.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/united.html)
+
+[![yeti](./thumbnails/yeti.png)](http://mitsuruog.github.io/gulp-markdown2bootstrap/yeti.html)
 
 ## API
 

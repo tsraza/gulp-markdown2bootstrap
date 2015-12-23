@@ -28,6 +28,7 @@
   ],
   "dependencies": {
     "gulp-util": "^3.0.0",
+    "highlight.js": "^9.0.0",
     "jade": "^1.11.0",
     "marked": "^0.3.2",
     "merge": "^1.2.0",

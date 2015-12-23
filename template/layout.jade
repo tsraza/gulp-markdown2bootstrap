@@ -13,13 +13,16 @@ html( lang="en" )
           link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet")
         link(href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/#{highlightTheme}.min.css" rel="stylesheet")
         style.
+          body {
+            padding-top: 7rem;
+          }
           .anchor {
             display: block;
             position: relative;
             top: -6rem;
             visibility: hidden;
           }
-    body(style="padding-top:10rem;")
+    body
         nav.navbar.navbar-inverse.navbar-fixed-top( role="navigation" )
             .container-fluid
                  .navbar-header

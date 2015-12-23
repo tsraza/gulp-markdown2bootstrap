@@ -93,7 +93,9 @@ module.exports = function(options) {
 			return;
 		}
 
-		marked(file.contents.toString(), merge(options, {renderer: renderer}), function(err, data) {
+		marked(file.contents.toString(), merge(options, {
+			renderer: renderer
+		}), function(err, data) {
 			if (err) {
 				cb(new gutil.PluginError(PLUGIN_NAME, err, {
 					fileName: file.path

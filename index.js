@@ -38,7 +38,7 @@ renderer.heading = (text, level, raw) => {
 	return '<a class="anchor" id="' + escapedText + '"></a>\n' +
 		'<h' + level + '><a name="' +
 		escapedText +
-		'" class="text-muted" href="#' +
+		'" class="text-muted" ng-anchor="#' +
 		escapedText +
 		'"><button type="button" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-link"></span></button></a>' +
 		text + '</h' + level + '>';
@@ -111,7 +111,7 @@ module.exports = function(options) {
 				content: data
 			};
 
-			file.contents = new Buffer(jade.renderFile(__dirname + '/template/layout.jade', merge(options, locals)));
+			file.contents = new Buffer(jade.renderFile(__dirname + '/template/ng-container.jade', merge(options, locals)));
 			file.path = gutil.replaceExtension(file.path, '.html');
 
 			toc = [];
